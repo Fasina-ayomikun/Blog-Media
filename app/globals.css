@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  outline: none;
+}
+
+select,
+input,
+textarea,
+button {
+  outline: none;
+}
+
+.container {
+  @apply max-w-7xl mx-auto;
+}
+
+.btn {
+  @apply bg-black text-white rounded-md;
+}
+
+.tabs {
+  @apply border-b-2 border-gray-300
+}
+
+.tabs .tab {
+  position: relative;
+}
+
+.tabs .tab::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #000;
+  border-radius: 30px;
+
+}
+
+.chat {
+  height: calc(100vh - 80px);
+}
+
+.blog h1 {
+  @apply font-bold text-3xl my-3
+}
+
+.blog h2 {
+  @apply font-bold text-2xl my-2
+}
+
+.blog h3 {
+  @apply font-bold text-xl
+}
+
+.blog h4 {
+  @apply font-bold text-lg
+}
+
+.blog h5 {
+  @apply font-bold text-base
+}
+
+.blog h6 {
+  @apply font-bold text-sm
+}
+
+.blog p {
+  @apply font-bold text-sm my-2 font-normal
+}
+
+.blog ul {
+  @apply pl-10 list-disc
+}
+
+.blog .ql-syntax {
+  @apply bg-black px-4 py-2 my-4 rounded-md mx-auto w-10/12 text-gray-200 text-sm
+}
+
+.blog ol {
+  @apply pl-10 list-decimal
+}
+
+.blog blockquote {
+  @apply px-5
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
